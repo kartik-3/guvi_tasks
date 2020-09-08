@@ -1,0 +1,21 @@
+JavaScript Objects
+
+Javascript is a prototype based language, i. e., it has the notion of a prototypical object. An object is used as a template from which to get the initial values
+
+JavaScript objects are it's one of the most important datatypes as almost everything can be objects. Objects form the building blocks of modern JavaScript.
+
+Unlike primitive variables which contain a single value, objects contain multiple values.
+
+Objects in JavaScript form the basis of many important and useful concepts like Classes and Inheritance.
+
+Internally, objects are represented as key-value pairs
+For example, an object employee can be represented as follows -
+	employee {
+		"empId": 1,
+		"empName": "Kartik",
+		"dept": "engineering"
+	}
+The keys are also called the properties of the object.
+Properties can be updated/updated by doing either employee."empName" or employee[empName].
+
+A JavaScript Object can have prmitive variables, functions, and even other objects as its properties.

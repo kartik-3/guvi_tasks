@@ -1,0 +1,11 @@
+Differences between Browser JS and Node JS.
+
+1. Browser JS is a simple programming language which runs on any browser's JavaScript engine. Node JS is an interpreter or a running environment for a JavaScript programming language.	
+
+2. Browser JS is used for front end tasks like script validation or interacting with front end objects. Node JS is used for server-side back end applications, for example web server and CLI tools.
+
+3. Using Node JS console we can run JavaScript files which can not be done by browser console.
+
+4. We can install multiple packages for Node JS and use them in the console whereas it cant be done for browser JS.
+
+5. Node JS console doesn't need the file to be of extension .js. Node JS recognizes a java script script even in a text file.

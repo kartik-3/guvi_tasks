@@ -1,0 +1,146 @@
+BASIC TAGS
+
+1. <html> - Root element
+2. <head> - Used to contain elements like style, script, title, meta, etc. (These won't be shown on the main webpage.)
+3. <body> - The main body of the web page that is visible to the user.
+4. <title> - The title of the webpage.
+5. <meta> - meta deta (info about the file)
+
+PARAGRAPH AND TEXT FORMATTING
+
+6. <h1> - <h6> -> Heading tags, h1>h2>...>h6
+7. <p> - paragraph tag
+8. <br/> - break tag
+9. <hr/> - horizontal row
+10. <big> - Bigger text.
+11. <small> - Smaller text.
+12. <b>,<u>,<i> - Bold, Underline, Italic.
+13. <sub>, <sup> - Subscript, supercript.
+
+COMMENTS
+
+14. <!-- --> - HTML comment.
+
+STYLING HTML
+
+15. <p style = "color: blue; background-color: red;"> - sStyle attribute
+
+FORMATTING A PAGE
+
+All of the below tags are not necessary and wont change the look and feel of the website. But they are usefule because -
+	a. They make the content readable.
+	b. They are used by search engines to easily see what content is used for what and therefore helps in SEO.
+
+Almost every webpage has 3 sections, a header, a main section and a footer.
+
+16. <header>
+17. <main>
+18. <footer>
+
+19. <nav> - All navigational elelments go inside the nav tag.
+20. <article> - Used for articles.
+21. <section> - Dividing content into multiple sections.
+22. <aside> - Define content aside from the content the tag is placed in.
+
+LINKS
+
+23. <a href="https://google.com">Google homepage</a> - Anchor element is used to add links to the webpage.
+24. <a href="..." target="_blank"></a> - Used to open the link in a new tab
+25. <a href="subdirectory/page2.html"></a> - To link to another html page or any other file that is stored in your directory or a sub directory
+
+IMAGES
+To show images sourced either from other websites or your own computer.
+
+25. <img src="https://www.google.com/imgres?Q" alt="A stop sign 1"/>
+26. <img width="100"; height="100"; src="../Pictures/stop-160734_1280"alt="A stop sign 2"/> 
+
+VIDEOS
+You can add your own video to the website and add many parameter to control it.
+
+27. <video src="tutorial.mp4" controls width = "250" poster="thumbnail.jpeg" autoplay loop>Tuturial video </video>
+
+IFRAME
+
+iFrames are used to display an entire website on your webpage. One can embed an entire website on the webpage.
+
+28. To add youtube video directly to your page.
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+LISTS
+
+29. Unordered Lists -
+		<ul>
+			<li>Apples</li>
+			<li>Oranges</li>
+			<li>Papaya</li>
+		</ul>
+30. Ordered Lists -
+		<ol>
+			<li>Apples</li>
+			<li>Oranges</li>
+			<li>Papaya</li>
+		</ol>
+		<ol type="A"> <!-- /a/I/i -->
+			<li>Apples</li>
+			<li>Oranges</li>
+			<li>Papaya</li>
+		</ol>
+31. Description Lists
+		<dl>
+			<dt>Apples</dt>
+			<dd>They are red.</dd>
+			<dt>Orange</dt>
+			<dd>They are orange.</dd>
+		</dl>
+
+TABLES
+
+32. <table> - Tag for adding table
+33. <tr> - Tag for adding row to the table
+34. <td> - Tag for adding column to the row of that table
+35. <caption>Table testing</caption> - Add a heading to the entire table.
+36. <th> - This data is a heading for this column.
+37. <thead> - This is used to signify the content under this is the heading of the table.
+38. <tbody> - This signifies that this conent is the body of the table.
+39. <th colspan="2"> - Colspan says how much column space will that data take.
+40. <th rowspan="2"> - Rowspan says how much row space will that data take.
+
+DIVS AND SPANS
+
+HTML mainly has two types of elements - block elements and inline elements.
+Block elements take the entire space of the page. We can't have two block elements sitting right next to each other.
+Inline elements take only as much space as they need. We can have multiple inline elements sitting together.
+Different tags are different types of elements - block/inline.
+For ex, <p> is block element and <a> is inline element.
+
+41. Spans - These are inline containers.
+	<span>
+42. Divs - These are block containers.
+	<divs>
+
+INPUTS AND FORMS
+
+43.
+	<form>
+		<input type="TEXT" name="email" value="enter your email">
+		<textarea>Enter a paragraph</textarea>
+		<input type="password" name="password" value="password">
+		<input type="date">
+		<input type="email">
+		<input type="file">
+		<input type="checkbox" name="cb">
+		<input type="checkbox" name="cb">
+		<input type="radio" name="cb">
+		<input type="radio" name="cb2">
+		<input type="submit" name="sub">
+	</form>
+
+META TAGS
+
+44. meta deta (info about the file/ data about data)
+
+	<meta charset="UTF-8">
+	<meta name="description" content="your description" (max 160 chars)>
+	<meta name="author" content="kartik">
+	<meta name="keywords" content="HTML, tutorial, CSS">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
