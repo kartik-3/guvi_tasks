@@ -1,0 +1,103 @@
+Communication Error can be of the following types/because of the following reasons -
+	1. Invalid URL/Post Data
+		- Typically happens when there are long string concatenations and when parameters are not correct.
+		- Don't forget to use encodeURIComponent() on each part.
+	2. Server Response Status
+		- Valid response codes where you would have to do the necessary handling are 200-300 and 304.
+	3. No Network Connection
+		- Happens when there is no internet connection.
+		- Different browsers handle this differently.
+	4. Server Response Content
+		- A valid status code is not enough.
+		- Server reponses often also return an HTML body.
+		- You can set the error code to 500 to signify an internal server error.
+
+
+Try-catch-Finally
+	1. Try
+		- Try is used to protect potentially error prone statements and catch these errors if they occur.
+		- Try statements must be immediately followed by catch statements.
+
+	2. Catch
+		- Catch is used immediately after try block.
+		- It is used to catch the error that occurred in the try block and handle them.
+
+	3. Finally
+		- Statements in finally block are executed no matter if an error is caught or not.
+
+	Example -
+		try {
+			//Potentially error prone statements.
+		}
+		catch{
+			//Handle the error.
+		}
+		finally{
+			//Execute these statements no matter what.
+		}
+
+
+Throw Custom Errors
+	- Custom errors can be thrown using 'throw' keyword.
+	- For example, 
+		if {
+			/*Error*/
+			throw new Error ("Error has occurred");
+		}
+
+
+- Throw should be used in the low level parts of the application, for eg, utilities, core libraries, etc.
+- Try-Catch blocks arte used at higher levels,for eg, client-side logic.
+
+
+Non-Fatal Errors
+	- Won't interfere with user's main tasks.
+	- Affect only a portion of the page.
+	- Recovery is possible.
+	- A repeat of the action may result in the appropriate result.
+	- Don't tell the user it isn't working unless absolutely necessary.
+	- The user can continue his/her work.
+
+Fatal Errors
+	- The application can not continue.
+	- Other errors will occur if the application continues.
+	- Message the user immediately and reload.
+
+
+Debug Mode
+	- Assign a variable that is globally available.
+	- Try-catch should re-throw the error.
+	- Window.oneError should return false.
+	- Allow the browser to handle the error.
+	- Example,
+		try {
+
+		}
+		catch (ex) {
+			if (debugMode){
+				throw ex;
+			}
+			else {
+				//print message
+			}
+		}
+
+Most common error
+	*	Uncaught TypeError: Cannot read property of undefined
+			- JavaScript TypeError is thrown when an operand or argument passed to a function is incompatible with the type expected by that operator or function.
+			- This error occurs in Chrome Browser when you read a property or call a method on an undefined object.
+			For example, 
+			CODE -
+				function myFunc(inVar) {
+				  if (inVar === undefined) {
+				        console.log(inVar.not)
+				  }
+				  return inVar;
+				}
+				var testVar;
+				console.log(myFunc(testVar));
+			OUTPUT -
+				Uncaught TypeError: Cannot read property 'not' of undefined
+
+			- We can handle this error by making sure a variable has a default value.
+			- Alternatively, we can use an if block to check if a variable is undefined and handle accordingly.

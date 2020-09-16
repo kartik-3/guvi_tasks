@@ -1,0 +1,9 @@
+Window is the main JavaScript object root, aka the global object in a browser, also can be treated as the root of the document object model.
+Since window is the global object you can reference any properties of it with just the property name - so you do not have to write down window. - it will be figured out by the runtime.
+Window is the first thing that gets loaded into the browser.
+
+Screen is a small information object about physical screen dimensions.
+It contains properties about the user's display.
+
+Document is the main object of the potentially visible (or better yet: rendered) document object model/DOM.
+Document is where the DOM lies.
